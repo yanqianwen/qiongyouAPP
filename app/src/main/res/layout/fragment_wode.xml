@@ -1,0 +1,167 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#bdbdbd"
+    tools:context="com.qianfeng.qiongyou.Fragment.WodeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!-- TODO: Update blank fragment layout -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/colorgrenn">
+
+            <ImageView
+                android:id="@+id/image_touxiang"
+                android:layout_width="66dp"
+                android:layout_height="66dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/me_avatar_boy" />
+
+            <TextView
+                android:id="@+id/tv_integral"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="150dp"
+                android:text="点击登录，体验更多"
+                android:textColor="@color/colorWhite" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/item_style"
+            android:background="@drawable/shape_item_top">
+            <ImageView style="@style/image_style"
+                android:src="@mipmap/ic_my_order"
+                />
+
+            <TextView
+                style="@style/text_style"
+                android:text="我的订单" />
+
+            <ImageView style="@style/arrow_style" />
+        </RelativeLayout>
+
+        <!-- 第二项 -->
+
+        <RelativeLayout
+            style="@style/item_style"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/shape_item_top">
+            <ImageView style="@style/image_style"
+                android:src="@mipmap/ic_my_coupon"
+                />
+            <TextView
+                style="@style/text_style"
+                android:text="我的优惠" />
+
+            <ImageView style="@style/arrow_style" />
+        </RelativeLayout>
+
+        <!-- 第三项 -->
+
+        <RelativeLayout
+            style="@style/item_style"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/shape_item_top">
+            <ImageView style="@style/image_style"
+                android:src="@mipmap/ic_my_favourite"
+                />
+            <TextView
+                style="@style/text_style"
+                android:text="我的收藏" />
+
+            <ImageView style="@style/arrow_style" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/item_style"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/shape_item_top">
+            <ImageView style="@style/image_style"
+                android:src="@mipmap/ic_my_consultation"
+                />
+            <TextView
+                style="@style/text_style"
+                android:text="我的咨询" />
+
+            <ImageView style="@style/arrow_style" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/item_style"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/shape_item_top">
+            <ImageView style="@style/image_style"
+                android:src="@mipmap/ic_my_alert"
+                />
+            <TextView
+                style="@style/text_style"
+                android:text="我的提醒" />
+
+            <ImageView style="@style/arrow_style" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/item_style"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_item_top">
+            <ImageView style="@style/image_style"
+                android:src="@mipmap/ic_my_common_persons"
+                />
+            <TextView
+                style="@style/text_style"
+                android:text="常用旅客信息" />
+
+            <ImageView style="@style/arrow_style" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/item_style"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/shape_item_top">
+            <ImageView style="@style/image_style"
+                android:src="@mipmap/ic_my_contacts"
+                />
+            <TextView
+                style="@style/text_style"
+                android:text="常用联系人" />
+
+            <ImageView style="@style/arrow_style" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/item_style"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_item_top">
+            <ImageView style="@style/image_style"
+                android:src="@mipmap/ic_my_feedback"
+                />
+            <TextView
+                style="@style/text_style"
+                android:text="问题与反馈" />
+
+            <ImageView style="@style/arrow_style" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/item_style"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/shape_item_top">
+            <ImageView style="@style/image_style"
+                android:src="@mipmap/ic_my_setting"
+                />
+            <TextView
+                style="@style/text_style"
+                android:text="更多设置" />
+
+            <ImageView style="@style/arrow_style" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.handmark.pulltorefresh.library.PullToRefreshScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/relative_top"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:background="@color/colorgrenn"
+                android:id="@+id/recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </RelativeLayout>
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/relative_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/image_huiwan"
+                android:scaleType="fitXY"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:clickable="true"
+                app:layout_widthPercent="33%" />
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/image_tejia"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/image_huiwan"
+                android:clickable="true"
+                app:layout_widthPercent="66%"
+                app:layout_heightPercent="40%"
+               />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/image_chaozhi"
+                android:scaleType="fitXY"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_below="@+id/image_tejia"
+                android:layout_toRightOf="@+id/image_huiwan"
+                android:clickable="true"
+                app:layout_heightPercent="60%"
+                app:layout_widthPercent="33.3%" />
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/image_qianggou"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:scaleType="fitStart"
+                android:layout_below="@+id/image_tejia"
+                android:layout_toRightOf="@+id/image_chaozhi"
+                android:clickable="true"
+                app:layout_heightPercent="60%"
+                app:layout_widthPercent="33.3%" />
+
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <com.qianfeng.qiongyou.MyListView
+            android:id="@+id/list_first"
+            android:background="@color/colorWhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" />
+        <Button
+            android:id="@+id/first_button"
+            android:text="查看更多"
+            android:clickable="true"
+            android:background="@mipmap/bg_hot_search_click"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:textColor="@color/colorgrenn"
+            android:layout_height="wrap_content" />
+
+        <com.qianfeng.qiongyou.MyListView
+            android:id="@+id/list_next"
+            android:background="@color/colorWhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" />
+    </LinearLayout>
+</com.handmark.pulltorefresh.library.PullToRefreshScrollView>

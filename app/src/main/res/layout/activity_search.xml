@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/search_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:background="@mipmap/bg_my_head_layout"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="0.8">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginRight="14dp"/>
+
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:background="@color/colorSearchText"
+            android:layout_height="match_parent" />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginRight="14dp"/>
+
+
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:background="@color/colorSearchText"
+            android:layout_height="match_parent" />
+
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginRight="14dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorSearchText"/>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"/>
+</LinearLayout>

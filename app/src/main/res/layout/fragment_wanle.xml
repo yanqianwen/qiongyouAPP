@@ -1,0 +1,140 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fcfcfc"
+    tools:context="com.qianfeng.qiongyou.Fragment.WanleFragment">
+
+ <LinearLayout
+     android:orientation="vertical"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="440dp"
+
+    >
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/image_tou"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@mipmap/ic_launcher"
+        />
+    <TextView
+        android:id="@+id/qiehuancity"
+        android:text="切换城市"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/colorWhite"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/clock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_clock_white"
+        android:layout_alignParentLeft="true"
+        android:layout_alignBottom="@+id/image_tou"
+        />
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/clock"
+        android:layout_alignBottom="@+id/image_tou"
+
+        />
+    <RelativeLayout
+        android:id="@+id/yiriyou"
+        android:layout_below="@+id/image_tou"
+        android:onClick="Click"
+        android:layout_marginTop="5dp"
+        style="@style/item_style"
+        android:background="@drawable/shape_item_top">
+        <ImageView
+            android:id="@+id/iv_yiriyou"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:paddingLeft="10dp"
+            android:src="@mipmap/ic_product_type_jipiao"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorBlack"
+            android:paddingLeft="10dp"
+            android:layout_toRightOf="@+id/iv_yiriyou"
+            android:text="一日游/特色体验/演出" />
+
+        <ImageView style="@style/arrow_style" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        style="@style/item_style"
+        android:id="@+id/citywalk"
+        android:onClick="Click"
+        android:layout_below="@+id/yiriyou"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/shape_item_top">
+        <ImageView
+            android:id="@+id/iv_CityWalk"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:paddingLeft="10dp"
+            android:src="@mipmap/ic_rent_car_small"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorBlack"
+            android:paddingLeft="10dp"
+            android:layout_toRightOf="@+id/iv_CityWalk"
+            android:text="City Walk" />
+        <ImageView style="@style/arrow_style" />
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_below="@+id/citywalk"
+        style="@style/item_style"
+        android:onClick="Click"
+        android:id="@+id/findcity"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/shape_item_top">
+        <ImageView
+            android:id="@+id/iv_faxianchengshi"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:paddingLeft="10dp"
+            android:src="@mipmap/ic_product_type_jiudian"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorBlack"
+            android:paddingLeft="10dp"
+            android:layout_toRightOf="@+id/iv_faxianchengshi"
+            android:text="发现城市" />
+
+        <ImageView style="@style/arrow_style" />
+    </RelativeLayout>
+</RelativeLayout>
+<com.qianfeng.qiongyou.MyListView
+    android:layout_marginTop="5dp"
+    android:id="@+id/lv"
+    android:background="@color/colorWhite"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+</com.qianfeng.qiongyou.MyListView>
+</LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/frame"
+    android:orientation="vertical">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/simple_item_image"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:scaleType="fitXY" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/simple_item_text_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:text="卧槽"/>
+        <TextView
+            android:id="@+id/simple_item_text_nameen"
+            android:layout_below="@id/simple_item_text_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="10sp"
+            android:text="wocao"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/colorWhite" />
+    </RelativeLayout>
+</FrameLayout>

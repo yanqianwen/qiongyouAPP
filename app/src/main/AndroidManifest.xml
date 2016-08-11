@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.qianfeng.qiongyou">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        </activity>
+        <activity
+            android:name=".Activity.LoginActivity"
+            android:label="@string/title_activity_login" />
+        <activity android:name=".Activity.CityActivity" />
+        <activity android:name=".Sortlistview.QuickLocationMainActivity" />
+        <activity android:name=".Activity.WebViewActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            />
+        <activity android:name=".Activity.OnedayyouActivity" />
+        <activity android:name=".Activity.CitywalkActivity" />
+        <activity android:name=".Activity.FindcityActivity"></activity>
+        <activity android:name=".Activity.GuideActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+        <activity android:name=".Activity.SplashActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity android:name=".Activity.MoreTopicActivity"></activity>
+    </application>
+
+</manifest>

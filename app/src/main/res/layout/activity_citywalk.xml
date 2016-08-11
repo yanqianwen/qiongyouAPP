@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.qianfeng.qiongyou.Activity.CitywalkActivity">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv_citywalk_click"
+        android:layout_width="match_parent"
+        android:layout_height="250dp" />
+    <com.qianfeng.qiongyou.MyListView
+        android:id="@+id/lv_citywalk_click"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.qianfeng.qiongyou.MyListView>
+</LinearLayout>
+</android.support.v4.widget.NestedScrollView>

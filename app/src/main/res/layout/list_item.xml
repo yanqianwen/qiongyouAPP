@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_item_parent_layout"
+        >
+  <TextView
+          android:id="@+id/text_first_char_hint"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:textSize="18dp"
+          android:padding="5dp"
+          android:background="#e1e1e1"
+          android:textColor="#f00"
+          android:visibility="gone">
+  </TextView>
+
+  <LinearLayout
+          xmlns:android="http://schemas.android.com/apk/res/android"
+          android:orientation="horizontal"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content">
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+      <TextView
+              android:id="@+id/text_website_name"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:textColor="@android:color/black"
+              android:textSize="14dp"
+              android:singleLine="true"
+              android:padding="8dp"
+              android:text="android"
+              />
+    </LinearLayout>
+    <View
+            android:id="@+id/divider"
+            android:background="#ccc"
+            android:focusable="false"
+            android:clickable="false"
+            android:longClickable="false"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            />
+  </LinearLayout>
+</LinearLayout>
